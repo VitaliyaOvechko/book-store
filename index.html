@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./main.css" />
   </head>
 
@@ -76,7 +77,7 @@
     </section>
 
     <section class="book-section container">
-      <h2 class="book-section-title">The Author’s Book</h2>
+      <h2 class="section-title">The Author’s Book</h2>
       <ul class="books-list list">
         <li class="books-list-item">
           <img
@@ -163,7 +164,7 @@
     </section>
 
     <section class="bookstore-section container">
-      <h2 class="bookstore-section-title">Trusted By The Best</h2>
+      <h2 class="section-title">Trusted By The Best</h2>
       <ul class="bookstore-list list">
         <li class="bookstore-list-item">
           <img
@@ -222,7 +223,7 @@
 
     <section class="get-book-section container">
       <div class="get-book-section-wrapper">
-        <h2 class="get-book-section-title">Get Book Copy Today!</h2>
+        <h2 class="section-title">Get Book Copy Today!</h2>
         <p class="get-book-section-text">
           We believe that bookstores are essential to a healthy culture. They’re
           where authors can connect with readers.
@@ -293,142 +294,193 @@
       </div>
     </section>
 
-    <section class="container">
-      <h2>Enhance knowledge & Vision</h2>
-      <ul class="list">
-        <li>
-          <h3>Chapter-1 Get Started Intro</h3>
-          <p>
+    <section class="container chapters-section">
+      <h2 class="section-title">Enhance knowledge & Vision</h2>
+      <ul class="list chapter-list"">
+        <li class="chapter-list-item">
+          <h3 class="chapter-item-title">Chapter-1 Get Started Intro</h3>
+          <p class="chapter-item-text">
             You can double your knowledge by reading this ever needed book that
             can last a lifetime.
           </p>
-          <ul class="list">
-            <li>
-              <h4>Pages :</h4>
-              <p>106 pages</p>
+          <ul class="list chapter-info">
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Pages :</h4>
+              <p class="chapter-info-text">106 pages</p>
             </li>
-            <li>
-              <h4>Length :</h4>
-              <p>2 Hours</p>
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Length :</h4>
+              <p class="chapter-info-text">2 Hours</p>
             </li>
           </ul>
         </li>
 
-        <li>
-          <h3>Chapter-2 The Roman Culture</h3>
-          <p>
+        <li class="chapter-list-item">
+          <h3 class="chapter-item-title">Chapter-2 The Roman Culture</h3>
+          <p class="chapter-item-text">
             It will help to improve your life career with the perfect and needed
             knowledge about your life.
           </p>
-          <ul class="list">
-            <li>
-              <h4>Pages :</h4>
-              <p>180 pages</p>
+          <ul class="list chapter-info">
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Pages :</h4>
+              <p class="chapter-info-text">180 pages</p>
             </li>
-            <li>
-              <h4>Length :</h4>
-              <p>3 Hours</p>
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Length :</h4>
+              <p class="chapter-info-text">3 Hours</p>
             </li>
           </ul>
         </li>
 
-        <li>
-          <h3>Chapter-3 How They Servived</h3>
-          <p>
+        <li class="chapter-list-item">
+          <h3 class="chapter-item-title">Chapter-3 How They Servived</h3>
+          <p class="chapter-item-text">
             We wanted to create an easy, convenient way for you to get your
             books & support.
           </p>
-          <ul class="list">
-            <li>
-              <h4>Pages :</h4>
-              <p>250 pages</p>
+          <ul class="list chapter-info">
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Pages :</h4>
+              <p class="chapter-info-text">250 pages</p>
             </li>
-            <li>
-              <h4>Length :</h4>
-              <p>4 Hours</p>
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Length :</h4>
+              <p class="chapter-info-text">4 Hours</p>
             </li>
           </ul>
         </li>
 
-        <li>
-          <h3>Chapter-4 The End Of Romans</h3>
-          <p>
+        <li class="chapter-list-item">
+          <h3 class="chapter-item-title">Chapter-4 The End Of Romans</h3>
+          <p class="chapter-item-text">
             Promote your book via Pages shop to support your writing & reading
             career.
           </p>
-          <ul class="list">
-            <li>
-              <h4>Pages :</h4>
-              <p>175 pages</p>
-            </li>
-            <li>
-              <h4>Length :</h4>
-              <p>3 Hours</p>
+          <ul class="list chapter-info">
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Pages :</h4>
+              <p class="chapter-info-text">175 pages</p>
+            </li class="chapter-info-item">
+            <li class="chapter-info-item">
+              <h4 class="chapter-info-title">Length :</h4>
+              <p class="chapter-info-text">3 Hours</p>
             </li>
           </ul>
         </li>
       </ul>
-      <button type="button">Start a 15-Days Free Trail</button>
-      <p>Short description about each chapter</p>
-      <p>Have any questions?</p>
-      <a>Contact us</a>
+      <div class="links-wrapper">
+        <button type="button" class="trial-btn">Start a 15-Days Free Trial</button>
+      <a class="link chapter-description">Short description about each chapter</a>
+      <div class="questions-block">
+        <p class="questions-text">Have any questions?</p>
+      <a class="link contact-link">Contact us</a>
+      </div>
+      </div>
     </section>
 
-    <section class="container">
-      <h2>Words From Our <br />Readers</h2>
-      <p>
+    <section class="container readers-section">
+<div class="readers-text-holder">
+        <h2 class="section-title readers-section-title">Words From Our Readers</h2>
+      <p class="readers-text">
         We believe that bookstores are essential to a healthy culture. They’re
         where authors can connect with readers, where we discover new writers,
         where children get hooked on the thrill of reading that can last a
         lifetime.
       </p>
-      <p>(4.8/5)</p>
-      <p>Overall Customer Ratings</p>
+<div class="rating-block">
+        <ul class="list circle-list">
+        <li class="circle-item"></li>
+        <li class="circle-item"></li>
+        <li class="circle-item"></li>
+        <li class="circle-item"></li>
+      </ul>
+      <p class="rating">(4.8/5)</p>
+</div>
+      <p class="rating-text">Overall Customer Ratings</p>
+</div>
 
-      <ul class="list">
-        <li>
-          <img
+      <div class="list reviews">
+<div class="reviews-wrapper">
+          <div class="reviews-item">
+          <div class="review-name-holder">
+            <img
             src="./images/James Williams.jpg"
             alt="James Williams photo"
             width="85"
             height="85"
+            class="reviews-img"
           />
-          <h3>James Williams</h3>
-          <h4>“ Great Books Collections ”</h4>
-          <p>
+          <div>
+            <h3 class="reviewer-name">James Williams</h3>
+      <ul class="list circle-list reviews-circle-list">
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+      </ul>
+          </div>
+          </div>
+          <h4 class="review-title">“ Great Books Collections ”</h4>
+          <p class="review-text">
             I was searching this book for many years and I was happy that I
             could find it here.
           </p>
-        </li>
-        <li>
-          <img
+        </div>
+
+        <div class="reviews-item">
+<div class="review-name-holder">
+            <img
             src="./images/Chris Adams.jpg"
             alt="Chris Adams photo"
             width="85"
             height="85"
+            class="reviews-img"
           />
-          <h3>Chris Adams</h3>
-          <h4>“ Perfect Response Author ”</h4>
-          <p>
+          <div>
+            <h3 class="reviewer-name">Chris Adams</h3>
+                  <ul class="list circle-list second-reviews-circle-list">
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+      </ul>
+          </div>
+</div>
+          <h4 class="review-title">“ Perfect Response Author ”</h4>
+          <p class="review-text">
             I had a question about the book and the author response was great &
             comfort.
           </p>
-        </li>
-        <li>
-          <img
+        </div>
+</div>
+
+        <div class="reviews-item">
+<div class="review-name-holder">
+            <img
             src="./images/Angeline Flora.jpg"
             alt="Angeline Flora photo"
             width="85"
             height="85"
+            class="reviews-img"
           />
-          <h3>Angeline Flora</h3>
-          <h4>“ Creative Writing Skill ”</h4>
-          <p>
+          <div>
+            <h3 class="reviewer-name">Angeline Flora</h3>
+                  <ul class="list circle-list reviews-circle-list">
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+        <li class="circle-item reviews-circle-item"></li>
+      </ul>
+          </div>
+</div>
+          <h4 class="review-title">“ Creative Writing Skill ”</h4>
+          <p class="review-text">
             Sent an email after to books arrived to ask about the author & I
             received a reply.
           </p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <section class="container">

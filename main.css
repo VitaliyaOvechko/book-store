@@ -3,7 +3,22 @@
     --background-second:#F5F8FC;
     --background-white: #F5F5F5;
     --background-accent: #FFCA42;
-    --white:#FFFFFF;
+    --white:#FFFFFF;    
+}
+
+/* :root {
+    --clr-base-dk: #1B3764;
+    --background-second: #F5F8FC;
+    --background-white: #F5F5F5;
+    --accent: #FFCA42;
+    --white: #FFFFFF;
+
+    --clr-base-lt: #B4C7E7;
+
+} */
+
+body{
+    font-family: 'Cardo';
 }
 
 .link{
@@ -49,7 +64,6 @@ img {
 .main-second-header{
     margin: 145px 0 0 0;
     color: var(--white);
-    font-family: 'Cardo'; 
     font-weight: 100;
     font-size: 21px;
     line-height: 1.71;
@@ -60,7 +74,6 @@ img {
     margin-top: 10px;
     margin-bottom: 24px;
     color: var(--white);
-    font-family: 'Cardo';
     font-size: 64px;
     line-height: 1.22;
     letter-spacing: 1.3px;
@@ -87,7 +100,6 @@ img {
     padding: 19px 52px;
     background-color: var(--background-accent);
     color: var(--background-main);
-    font-family: 'Cardo';
     font-size: 19px;
     line-height: 1.5;
     letter-spacing: 0.57px;
@@ -98,7 +110,6 @@ img {
     /* border-bottom: 0.5 solid var(--white); */
     border: none;
     color: var(--white);
-    font-family: 'Cardo';
     font-size: 19px;
     line-height: 1.6;
     letter-spacing: 0.38px;
@@ -112,7 +123,6 @@ img {
 
 .characteristics-header{
     color: var(--white);
-    font-family: 'Cardo';
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.48px;
@@ -120,7 +130,6 @@ img {
 
 .characteristics-text{
     color: #B4C7E7;
-    font-family: 'Cardo';
     font-size: 17px;
     line-height: 1.59;
 }
@@ -136,13 +145,10 @@ img {
     padding-bottom: 150px;
 }
 
-.book-section-title,
-.bookstore-section-title,
-.learn-section-title{
+.section-title{
     text-align: center;
     margin-top: 0;
     margin-bottom: 96px;
-    font-family: 'Cardo';
     font-size: 42px;
     line-height: 1.19;
     color: var(--background-main);
@@ -158,7 +164,6 @@ img {
 }
 
 .book-name{
-    font-family: 'Cardo';
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: 0.32px;
@@ -180,7 +185,6 @@ img {
 }
 
 .printed-mark{
-    font-family: 'Cardo';
     font-size: 24px;
     line-height: 1.16;
     color: var(--background-main);
@@ -192,7 +196,6 @@ img {
     adding: 19px 52px;
     background-color: transparent;
     border: 1px solid var(--background-accent);
-    font-family: 'Cardo';
     font-size: 19px;
     line-height: 1.5;
     letter-spacing: 0.38px;
@@ -215,7 +218,6 @@ img {
 
 .author-section-title{
     color: var(--background-main);
-    font-family: 'Cardo';
     font-size: 42px;
     line-height: 1.19;
 }
@@ -238,7 +240,6 @@ img {
     margin-top: 33px;
     margin-bottom: 1px;
     color: var(--background-main);
-    font-family: 'Cardo';
     font-size: 54px;
     line-height: 1.43;
 }
@@ -264,7 +265,6 @@ img {
     margin-top: 13px;
     margin-bottom: 10px;
     color: var(--background-accent);
-    font-family: 'Cardo';
     font-size: 22px;
     line-height: 1.18;
 }
@@ -291,14 +291,12 @@ img {
 }
 
 .bookstore-title{
-    font-family: 'Cardo';
     font-size: 24px;
     line-height: 1.17;
     color: var(--background-main);
 }
 
 .bookstore-text{
-    font-family: 'Cardo';
     font-size: 19px;
     line-height: 1.47;
     color: #969AA0;
@@ -322,7 +320,6 @@ img {
 } */
 
 .get-book-section-title{
-    font-family: 'Cardo';
     font-size: 45px;
     line-height: 1.2;
     color: var(--white);
@@ -333,7 +330,6 @@ img {
     margin-top: 54px;
     margin-bottom: 27px ;
     width: 539px;;
-    font-family: 'Cardo';
     font-size: 19px;
     line-height: 1.47;
     color: #B4C7E7;
@@ -378,7 +374,6 @@ img {
 
 .item-number{
     position: absolute;
-    font-family: 'Cardo';
     font-size: 23px;
     line-height: 1.25;
     color: var(--background-main);
@@ -386,7 +381,6 @@ img {
 
 .learn-section-item-text{
     margin-top: 30px;   
-    font-family: 'Cardo';
     font-size: 24px;
     line-height: 1.38;
     color: var(--background-main);
@@ -402,8 +396,259 @@ img {
     position: relative;
 }
 
-.square-img{
+.square-img {
     top: -590px;
     right: -40px;
     z-index: -1;
+}
+
+/* chapters-section */
+
+.chapters-section{
+background-color: #F4F8FF;
+padding-top: 120px;
+padding-bottom: 130px;
+}
+
+.chapter-list{
+    display: grid;
+    grid-template-columns: 635px 635px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    justify-content: center;
+}
+
+.chapter-list-item{
+    /* width: 635px;
+    height: 242px; */
+    background-color: #FFFFFF;
+    padding: 42px 40px 34px 40px;
+}
+
+.chapter-item-title{
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #1B3764;
+}
+
+.chapter-item-text{
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #969AA0;
+}
+
+.chapter-info{
+    display: flex;
+    gap:45px;
+}
+
+.chapter-info-item{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.chapter-info-item::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFCA42;
+}
+
+.chapter-info-title {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.36;
+    color: #1B3764;
+}
+
+.chapter-info-text{
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #969AA0;
+}
+
+.trial-btn{
+    margin-top: 60px;
+    margin-bottom: 34px;
+    background-color: #FFCA42;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #1B3764;
+    padding: 24px 92px;
+    border: transparent;
+}
+
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions-block{
+    display: flex;
+    align-items: center;
+}
+
+.chapter-description, .contact-link, .questions-text{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #969AA0;
+}
+
+.questions-text{
+    color: #1B3764;
+}
+
+/* readers-section */
+
+.readers-section{
+    display: flex;
+    gap: 63px;
+    background-color: var(--white);
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.readers-text-holder{
+   max-width: 435px;
+}
+
+.readers-section-title{
+    text-align: left;
+    margin: 0;
+}
+.readers-section-title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--background-accent);
+    margin-top: 23px;
+    margin-bottom: 33px;
+}
+
+.readers-text{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #969AA0;
+}
+
+.rating-block{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rating{
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--background-main);
+}
+
+.circle-list {
+    display: flex;
+    gap: 5px;
+}
+
+.circle-item{
+    border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: var(--background-accent);
+}
+
+.circle-list::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, var(--background-accent) 50%, transparent 50%);
+    border: 1px solid var(--background-accent);
+}
+
+.rating-text{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1B3764;
+}
+
+.reviews{
+display: flex;
+gap: 30px;
+align-items: center;
+}
+
+.reviews-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviews-item{
+    box-sizing: border-box;
+    width: 381px;
+    background-color: var(--background-main);
+    padding: 40px 43px 24px 35px;
+}
+
+.review-name-holder{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.reviews-img{
+    border-radius: 50%;
+}
+
+.reviewer-name{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--white);
+}
+
+.review-title{
+    margin-top: 20px;
+    margin-bottom: 13px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.review-text{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #B4C7E7;
+}
+
+.reviews-circle-list::after{
+    width: 12px;
+    height: 12px;
+}
+
+.second-reviews-circle-list::after{
+    width: 12px;
+    height: 12px;
+    background:  var(--background-main);
+}
+
+.reviews-circle-item{
+    width: 12px;
+    height: 12px;
 }
