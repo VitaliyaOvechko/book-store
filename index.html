@@ -17,21 +17,49 @@
 
   <body>
     <header class="header container">
-      <div class="logo-wrapper">
-        <p>Pages</p>
+      <div class="header-logo-wrapper">
+        <a class="logo-link">
+            <svg class="logo-icon" width="119" height="35">
+            <use href="./icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
       </div>
-      <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>In</li>
+ <ul class="list header-soc-list">
+        <li class="header-soc-item">
+          <a class="header-soc-link">
+            <svg class="header-soc-icon" width="10" height="16">
+            <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="header-soc-item">
+            <a class="header-soc-link">
+            <svg class="header-soc-icon" width="16" height="14">
+            <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="header-soc-item">
+            <a class="header-soc-link">
+            <svg class="header-soc-icon" width="14" height="14">
+            <use href="./icons/symbol-defs.svg#icon-In"></use>
+          </svg>
+          </a>
+        </li>
       </ul>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Pages</li>
-        <li>Contact Us</li>
+      <ul class="list nav-list">
+        <li class="nav-list-item">Home</li>
+        <li class="nav-list-item">About</li>
+        <li class="nav-list-item">Pages</li>
+        <li class="nav-list-item">Contact Us</li>
       </ul>
-      <div>Корзина</div>
+      <div class="cart">
+        <a class="cart-link">
+            <svg class="cart-icon" width="20" height="20">
+            <use href="./icons/symbol-defs.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
       <button type="button" class="ordered-btn">Order Today</button>
     </header>
 
@@ -77,7 +105,7 @@
     </section>
 
     <section class="book-section container">
-      <h2 class="section-title">The Author’s Book</h2>
+      <h2 class="section-title book-section-title">The Author’s Book</h2>
       <ul class="books-list list">
         <li class="books-list-item">
           <img
@@ -164,7 +192,7 @@
     </section>
 
     <section class="bookstore-section container">
-      <h2 class="section-title">Trusted By The Best</h2>
+      <h2 class="section-title bookstore-section-title">Trusted By The Best</h2>
       <ul class="bookstore-list list">
         <li class="bookstore-list-item">
           <img
@@ -223,7 +251,7 @@
 
     <section class="get-book-section container">
       <div class="get-book-section-wrapper">
-        <h2 class="section-title">Get Book Copy Today!</h2>
+        <h2 class="section-title get-book-section-title">Get Book Copy Today!</h2>
         <p class="get-book-section-text">
           We believe that bookstores are essential to a healthy culture. They’re
           where authors can connect with readers.
@@ -243,7 +271,7 @@
 
     <section class="learn-section container">
       <div>
-        <h2 class="learn-section-title">What Will You Learn?</h2>
+        <h2 class="section-title learn-title">What Will You Learn?</h2>
         <ul class="learn-section-list list">
           <li class="learn-section-list-item">
             <div class="item-number-wrapper">
@@ -295,7 +323,7 @@
     </section>
 
     <section class="container chapters-section">
-      <h2 class="section-title">Enhance knowledge & Vision</h2>
+      <h2 class="section-title chapters-section-title">Enhance knowledge & Vision</h2>
       <ul class="list chapter-list"">
         <li class="chapter-list-item">
           <h3 class="chapter-item-title">Chapter-1 Get Started Intro</h3>
@@ -483,110 +511,176 @@
       </div>
     </section>
 
-    <section class="container">
-      <h2>Articles & Resources</h2>
-      <ul class="list">
-        <li>
+    <section class="container articles-section">
+      <h2 class="section-title">Articles & Resources</h2>
+      <ul class="list articles-list">
+        <li class="article-item">
           <img src="./images/Articles_1.jpg" width="420" height="350" />
-          <h3>Significant reading has more info number</h3>
-          <p>
+          <div class="article-description">
+          <h3 class="article-title">Significant reading has more info number</h3>
+          <p class="article-text">
             Override the digital divide with additional clickthroughs from
             DevOps for real-time schemas.
           </p>
-          <a>Readmore</a>
-          <p>October 6, 2021</p>
+<div class="article-box">
+            <a class="link readmore-link">Readmore</a>
+          <p class="date">October 6, 2021</p>
+</div>
+          </div>
         </li>
-        <li>
+        <li class="article-item">
           <img src="./images/Articles_2.jpg" width="420" height="350" />
-          <h3>Many variations of pass majority have suffered</h3>
-          <p>
-            Capitalize on low-hanging fruit to identify a ballpark value-added
+          <div class="article-description">
+            <h3 class="article-title">Many variations of pass majority have suffered</h3>
+          <p class="article-text">
+            Capitalize on low-hanging fruit to <br>identify a ballpark value-added
             activity to beta test.
           </p>
-          <a>Readmore</a>
-          <p>October 6, 2021</p>
+<div class="article-box">
+            <a class="link readmore-link">Readmore</a>
+          <p class="date">October 6, 2021</p>
+</div>
+          </div>
         </li>
-        <li>
+        <li class="article-item">
           <img src="./images/Articles_3.jpg" width="420" height="350" />
-          <h3>Words which don’t look even slightly believable</h3>
-          <p>
+          <div class="article-description">
+            <h3 class="article-title">Words which don’t look even slightly believable</h3>
+          <p class="article-text">
             Podcasting operational change management inside of workflows to
             establish a framework.
           </p>
-          <a>Readmore</a>
-          <p>October 6, 2021</p>
+<div class="article-box">
+            <a class="link readmore-link">Readmore</a>
+          <p class="date">October 6, 2021</p>
+</div>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section class="container">
-      <h2>Get The Best Updates</h2>
-      <p>
-        Subscribe with your mail id to know the current update in book edition
+    <section class="container subscribe-section">
+      <div class="subscribe-wrapper">
+        <h2 class="section-title">Get The Best Updates</h2>
+      <p class="subscribe-text">
+        Subscribe with your mail id to know the current update in book <br/> edition
         at your fingertip with in a minute.
       </p>
-      <form>
-        <input placeholder="Your Email ID..." />
-        <button type="submit">Subscribe</button>
+      <form class="subscribe-form">
+        <input placeholder="Your Email ID..." class="subscribe-input"/>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
       </form>
+      </div>
     </section>
 
-    <footer class="container">
-      <div class="logo-wrapper">
-        <p>Pages</p>
+    <footer class="container footer">
+      <div class="footer-link-wrapper">
+        <a class="logo-link">
+            <svg class="logo-icon" width="119" height="35">
+            <use href="./icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          </a>
+      <ul class="list footer-soc-list">
+        <li class="footer-soc-item">
+          <a class="footer-soc-link">
+            <svg class="footer-soc-icon" width="10" height="16">
+            <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="footer-soc-item">
+            <a class="footer-soc-link">
+            <svg class="footer-soc-icon" width="16" height="14">
+            <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="footer-soc-item">
+            <a class="footer-soc-link">
+            <svg class="footer-soc-icon" width="14" height="14">
+            <use href="./icons/symbol-defs.svg#icon-In"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="footer-soc-item">
+            <a class="footer-soc-link">
+            <svg class="footer-soc-icon" width="17" height="18">
+            <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+          </a>
+        </li>
+      </ul>
       </div>
+      <div class="list nav-footer-block">
+        <p class="footer-list-title">Explore</p>
+
+<div class="nav-footer-wrapper">
+        <span class="footer-dots">...</span>
+          <a class="footer-nav-link">Home</a>
+</div>
+
+<div class="nav-footer-wrapper">
+        <span class="footer-dots">...</span>
+          <a class="footer-nav-link">About</a>
+</div>
+<div class="nav-footer-wrapper">
+        <span class="footer-dots">...</span>
+          <a class="footer-nav-link">Articles</a>
+</div>
+<div class="nav-footer-wrapper">
+        <span class="footer-dots">...</span>
+          <a class="footer-nav-link">Our Store</a>
+</div>
+<div class="nav-footer-wrapper">
+        <span class="footer-dots">...</span>
+          <a class="footer-nav-link">Contact Us</a>
+</div>
+      </div>
+
       <ul class="list">
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>In</li>
-        <li>Instagram</li>
-      </ul>
-      <ul class="list">
-        <h3>Explore</h3>
+        <p class="footer-list-title">Utility Pages</p>
         <li>
-          <a>Home</a>
+          <a class="footer-nav-link"> Style Guide </a>
         </li>
         <li>
-          <a>About</a>
+          <a class="footer-nav-link"> 404 Not Found </a>
         </li>
         <li>
-          <a>Articles</a>
+          <a class="footer-nav-link"> Password Protected </a>
         </li>
         <li>
-          <a>Our Store</a>
+          <a class="footer-nav-link"> Licenses </a>
         </li>
         <li>
-          <a>Contact Us</a>
+          <a class="footer-nav-link"> Changelog </a>
         </li>
       </ul>
-      <ul class="list">
-        <h3>Utility Pages</h3>
+      <div class="footer-adress-lists-wrapper">
+        <p class="footer-list-title">Keep in Touch</p>
+<div class="adress-wrapper">
+        <ul class="list text-holder">
         <li>
-          <a> Style Guide </a>
+          <span class="footer-list-text">Address:</span>
         </li>
-        <li>
-          <a> 404 Not Found </a>
-        </li>
-        <li>
-          <a> Password Protected </a>
-        </li>
-        <li>
-          <a> Licenses </a>
-        </li>
-        <li>
-          <a> Changelog </a>
-        </li>
+          <li>
+            <span class="footer-list-text"> Mail: </span>
+          </li>
+          <li>
+            <span class="footer-list-text">Phone:</span>
+          </li>
       </ul>
-      <div>
-        <h3>Keep in Touch</h3>
-        <address>
-          <span>Address :</span>
-          24A Kingston St, Los Vegas NC 28202, USA.
-          <span> Mail : </span>
-          <a>support@pages.com</a>
-          <span>Phone :</span>
-          <a>(+22) 123 - 4567 - 900</a>
-        </address>
+            <ul class="list link-holder">
+        <li>
+          <a class="footer-nav-link">24A Kingston St, Los Vegas NC 28202, USA.</a>
+        </li>
+          <li>
+          <a class="footer-nav-link">support@pages.com</a>
+          </li>
+          <li>
+          <a class="footer-nav-link">(+22) 123 - 4567 - 900</a>
+          </li>
+      </ul>
+</div>
       </div>
     </footer>
   </body>
